@@ -1,7 +1,7 @@
 import mysql.connector 
-import click 
+import click
 from flask import current_app, g
-from flask import with_appcontext
+from flask.cli import with_appcontext 
 from .schema import instructions 
 
 def get_db():
@@ -40,7 +40,7 @@ def init_db_command():
 
 
 def init_app(app):
-    app.teardown.appcontext(close_db)
+    app.teardown_appcontext(close_db)
     app.cli.add_command(init_db_command)
 
 
