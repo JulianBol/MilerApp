@@ -1,0 +1,35 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0px 3px 5px #ddd;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.content {
+    margin-left: 200px;
+    margin-top: 45px;
+}
+
+form input {
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px #ddd;
+    outline: none; /* Elimina el borde cuando se seleciona el input */
+    width: 450px;
+    display: block;
+}
+
