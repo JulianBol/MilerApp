@@ -3,13 +3,18 @@
 {% block header %}
 <h1>{% block title %}Correos Enviados{% endblock %}</h1>
 {% endblock %}
+
+{% block action %}
+   <a class="button" href="#">Nuevo Correo</a> 
+{% endblock %}
+
 {% block content %}
 <ul>
     {% for mail in mails %}
         <li class="mail">
             <div>
-                <span class="email">{{ mail['email'] }}</span>
                 <span class="subject">{{ mail['subject'] }}</span>
+                <span class="email">{{ mail['email'] }}</span>
                 <hr>
                 <p class="mail-content">{{ mail['content'] }}</p>
             </div>
