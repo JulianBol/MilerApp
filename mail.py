@@ -14,3 +14,7 @@ def index():
     db.commit()
 
     return render_template('mails/index.html', mails = mails)
+
+@bp.route('/create', methods = ['GET', 'POST'])
+def create():
+    return render_template('mails/create.html')
