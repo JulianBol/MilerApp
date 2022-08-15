@@ -19,6 +19,7 @@ nav {
 .content {
     margin-left: 200px;
     margin-top: 45px;
+    margin-right: 30px;
 }
 
 form input {
@@ -31,5 +32,40 @@ form input {
     outline: none; /* Elimina el borde cuando se seleciona el input */
     width: 450px;
     display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+}
+
+.mail {
+    background-color: #FFF;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    box-shadow: 0 1px 5px #ddd;
+    border-radius: 6px;
+}
+
+.mail-content {
+    margin: 5px 0 0 0;
+    color: rgb(129, 129, 129);
+}
+
+.email {
+    color: #18de6b;
+}
+
+.subject {
+    font-weight: 600;
+    margin-right: 8px;
 }
 
