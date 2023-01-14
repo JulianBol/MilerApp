@@ -9,7 +9,8 @@ def create_app():
         DATABASE_HOST = os.environ.get('FLASK_DATABASE_HOST'),
         DATABASE_PASSWORD = os.environ.get('FLASK_DATABASE_PASSWORD'),
         DATABASE_USER = os.environ.get('FLASK_DATABASE_USER'),
-        DATABASE = os.environ.get('FLASK_DATABASE')
+        DATABASE = os.environ.get('FLASK_DATABASE'),
+        FROM_EMAIL = os.environ.get('FROM_EMAIL'),
     )
 
     from . import db
